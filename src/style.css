@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+:root
+{
+    --header-bckgrnd: #00000077;
+    --header-bckgrnd-nav: #1A1A1A77;
+    --header-text-color: white;
+}
+
+body
+{
+    min-height: 100vh;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    background-image: url("./resto-bckgrnd.jpg");
+}
+
+header
+{
+    background-color: var(--header-bckgrnd);
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+nav
+{
+    border-radius: 10px 10px 0 0;
+    margin-top: 20px;
+    padding: 0.5em 1.5em;
+    border: 1px solid var(--header-text-color);
+    border-bottom: none;
+    color: var(--header-text-color);
+    font-family: 'Open Sans', 'Times New Roman', Times, serif;
+}
+
+
+
+nav.selected
+{
+    background-color: var(--header-bckgrnd-nav);
+    font-weight: bold;
+}
+
+#content
+{
+    flex: 1;
+}
+
+.presentation
+{
+    width: 100%;
+    height: 100vh;
+}
