@@ -12,7 +12,7 @@ export default class HomePageView
         this.#homePageViewModel = homePageViewModel;
     }
 
-    #showHomeRestaurantInfos(presentation)
+    #showHomeRestaurantInfos()
     {
         const restaurantInfos = this.#document.createElement("div");
         restaurantInfos.classList.add("restaurant-infos");
@@ -26,10 +26,10 @@ export default class HomePageView
         restaurantInfos.appendChild(restaurantName);
         restaurantInfos.appendChild(informations);
 
-        presentation.appendChild(restaurantInfos);
+        this.#container.appendChild(restaurantInfos);
     }
 
-    #showHomeSubPresentation(presentation)
+    #showHomeSubPresentation()
     {
         const subPresentation = this.#document.createElement("div");
         subPresentation.classList.add("informations", "sub-presentation");
@@ -39,10 +39,10 @@ export default class HomePageView
 
         subPresentation.appendChild(description);
 
-        presentation.appendChild(subPresentation);
+        this.#container.appendChild(subPresentation);
     }
 
-    #showHomeHours(presentation)
+    #showHomeHours()
     {
         const hoursInfos = this.#document.createElement("div");
         hoursInfos.classList.add("informations", "hours");
@@ -63,18 +63,13 @@ export default class HomePageView
         hoursInfos.appendChild(hours);
         hoursInfos.appendChild(hoursList);
 
-        presentation.appendChild(hoursInfos);
+        this.#container.appendChild(hoursInfos);
     }
 
     show()
     {
-        const presentation = this.#document.createElement("div");
-        presentation.classList.add("presentation");
-
-        this.#showHomeRestaurantInfos(presentation);
-        this.#showHomeSubPresentation(presentation);
-        this.#showHomeHours(presentation);
-
-        this.#container.appendChild(presentation);
+        this.#showHomeRestaurantInfos();
+        this.#showHomeSubPresentation();
+        this.#showHomeHours();
     }
 }
