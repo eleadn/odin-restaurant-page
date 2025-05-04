@@ -6,7 +6,7 @@ const content = document.querySelector("#content");
 const navMenu = document.querySelector("nav");
 const buttons = Array.from(navMenu.children);
 
-const homePage = new HomePageViewModel(
+const homePageViewModel = new HomePageViewModel(
     "Trattoria Lesbiana",
     "La Trattoria Lesbiana is a traditionnal italian restaurant. Our ingredients are fresh and the food is prepared by real Italian Lesbians. Enjoy a charming place by the sea that surely will make you feel like a real mediterranean.",
     "An Italian Restaurant",
@@ -22,4 +22,4 @@ const homePage = new HomePageViewModel(
     ],
 );
 
-const controller = new DisplayController(document, content, buttons, homePage);
+const controller = new DisplayController(document, content, buttons, homePageViewModel);
