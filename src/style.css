@@ -177,13 +177,13 @@ button.selected
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 5px;
 }
 
 .item-header
 {
     font-weight: bold;
+    min-width: 200px;
     max-width: 200px;
 }
 
@@ -195,5 +195,5 @@ button.selected
 .price
 {
     font-size: 14px;
-    margin-left: 5px;
+    margin-left: auto;
 }
