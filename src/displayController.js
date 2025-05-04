@@ -1,11 +1,11 @@
-import HomePageView from "./homePageView";
+import HomePageView from "./views/homePageView";
 
 export default class DisplayController
 {
     #container;
     #navButtons;
     #currentMenu;
-
+     
     #pages;
 
     #selectedClass = "selected";
@@ -23,10 +23,10 @@ export default class DisplayController
 
         this.#navButtons.forEach((button, _, __) => button.addEventListener("click", (event) => this.#switchPage(event.target)));
 
-        if (this.#currentMenu !== null)
+        /*if (this.#currentMenu !== null)
         {
             this.#switchPage(this.#currentMenu);
-        }
+        }*/
     }
 
     #clearContainer()

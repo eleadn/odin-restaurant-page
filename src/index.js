@@ -1,6 +1,6 @@
 import "./style.css";
 import DisplayController from "./displayController.js";
-import HomePageViewModel from "./homePageViewModel.js";
+import HomePageViewModel from "./views/homePageViewModel.js";
 
 const content = document.querySelector("#content");
 const navMenu = document.querySelector("nav");
@@ -22,4 +22,4 @@ const homePageViewModel = new HomePageViewModel(
     ],
 );
 
-const controller = new DisplayController(document, content, buttons, homePageViewModel);
+new DisplayController(document, content, buttons, homePageViewModel);
