@@ -20,7 +20,7 @@ body
     min-height: 100vh;
     display:flex;
     flex-direction: column;
-    background-image: url("./resto-bckgrnd.jpg");
+    background-image: url("./assets/resto-bckgrnd.jpg");
     background-attachment: fixed;
     background-size: cover;
     font-family: 'Open Sans', 'Times New Roman', Times, serif;
