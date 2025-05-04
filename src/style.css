@@ -140,3 +140,60 @@ button.selected
     width: 30%;
     font-size: larger;
 }
+
+.menu-list
+{
+    background-color: var(--main-bckgrnd);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.menu-part
+{
+    width: min(60%, 500px);
+    border-radius: 20px;
+    padding: 50px;
+    background-color: var(--secondary-bckgrnd);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.menu-part ul
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-item
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.item-header
+{
+    font-weight: bold;
+    max-width: 200px;
+}
+
+.ingredients
+{
+    font-size: 12px;
+}
+
+.price
+{
+    font-size: 14px;
+    margin-left: 5px;
+}

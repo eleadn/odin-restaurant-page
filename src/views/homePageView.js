@@ -1,3 +1,5 @@
+import homePageViewModel from "./homePageViewModel";
+
 export default class HomePageView
 {
     #document;
