@@ -1,3 +1,4 @@
+import ContactView from "./views/contactView";
 import HomePageView from "./views/homePageView";
 import MenuView from "./views/menuView";
 
@@ -11,7 +12,7 @@ export default class DisplayController
 
     #selectedClass = "selected";
 
-    constructor(document, container, navButtons, homePageViewModel, menuViewModel)
+    constructor(document, container, navButtons, homePageViewModel, menuViewModel, contactViewModel)
     {
         this.#container = container;
         this.#navButtons = navButtons;
@@ -21,6 +22,7 @@ export default class DisplayController
         {
             "Home": new HomePageView(document, container, homePageViewModel),
             "Menu": new MenuView(document, container, menuViewModel),
+            "About" : new ContactView(document, container, contactViewModel),
         }
 
         this.#navButtons.forEach((button, _, __) => button.addEventListener("click", (event) => this.#switchPage(event.target)));

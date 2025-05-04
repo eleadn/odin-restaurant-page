@@ -5,6 +5,7 @@ import MenuViewModel from "./views/menuViewModel.js";
 import Menu from "./menu/menu.js";
 import MenuCategory from "./menu/menuCategory.js";
 import MenuItem from "./menu/menuItem.js";
+import ContactViewModel from "./views/contactViewModel.js";
 
 const content = document.querySelector("#content");
 const navMenu = document.querySelector("nav");
@@ -88,4 +89,6 @@ const categories =
 const menu = new Menu(categories);
 const menuViewModel = new MenuViewModel(menu);
 
-new DisplayController(document, content, buttons, homePageViewModel, menuViewModel);
+const contactViewModel = new ContactViewModel("01.01.01.01.01", "lesbiantrattoria@dontexist.sad");
+
+new DisplayController(document, content, buttons, homePageViewModel, menuViewModel, contactViewModel);

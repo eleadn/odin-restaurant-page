@@ -197,3 +197,28 @@ button.selected
     font-size: 14px;
     margin-left: auto;
 }
+
+.contact-card
+{
+    background-color: var(--main-bckgrnd);
+    width: 100%;
+    height: calc(100vh - 34px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact
+{
+    background-color: var(--ternary-bckgrnd);
+    padding: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact h1
+{
+    margin-bottom: 20px;
+}
